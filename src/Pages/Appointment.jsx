@@ -78,15 +78,15 @@ useEffect(() => {
   }, [docSlots]);
 
   return docInfo && (
-    <div className="">
+    <div>
     <div className="flex flex-col md:flex-row gap-4">
       <div className="bg-primary w-full md:max-w-72 rounded-lg">
-         <img src={docInfo.image} alt="" />
+         <img src={docInfo.image} alt={docInfo.name} />
       </div>
     <div className="flex-1 border border-gray-400 rounded-lg p-8 py-7 bg-white mx-2 sm:mx-0 mt-[-80px] md:mt-0">       
          <p className="flex items-center gap-2 text-2xl font-medium text-gray-900">
            {docInfo.name}
-           <img src={assets.verified_icon} alt className="w-5"/>
+           <img src={assets.verified_icon} alt="Verified" className="w-5"/>
          </p>
       <div className="">
         <p className="flex items-center gap-2 text-sm mt-1 text-gray-600">
