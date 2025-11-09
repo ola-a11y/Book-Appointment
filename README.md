@@ -1,12 +1,66 @@
-# React + Vite
+# 🩺 Prescripto - Medical Clinic Homepage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a front-end project for a medical booking application's landing page. It was built using **React** and **Tailwind CSS** with a primary focus on a clean UI, responsive design, and full accessibility.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+You can view and interact with the live project here:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**[https://booking-system-abf5f.web.app/](https://booking-system-abf5f.web.app/)**
+
+---
+
+## 🌟 Key Features
+
+* **Professional & Clean UI:** A modern, user-centric interface focused on a great user experience (UX).
+* **Fully Responsive Design:** The layout is 100% responsive and works perfectly on all screen sizes (mobile, tablet, and desktop).
+* **Accessibility (a11y) First:** ♿
+    * Built from the ground up with accessibility standards in mind.
+    * **Full Keyboard Navigation:** All interactive elements (links, buttons, and cards) are fully accessible and focusable using the `Tab` key.
+    * **Semantic HTML:** Correct use of `<h2>`, `<button>`, and `<Link>` tags to ensure screen readers can navigate the page logically.
+    * **Descriptive Alt Tags:** All meaningful images include descriptive `alt` text.
+* **Client-Side Routing:** Uses `react-router-dom` to handle navigation between the Home, Doctors, and individual Appointment pages.
+* **Dynamic Filtering:** Features the ability to filter the list of doctors based on their medical specialty.
+
+---
+
+## 🖼️ Screenshots
+
+(It's highly recommended to add screenshots of your project here. You can drag and drop them into the README on GitHub.)
+
+
+
+
+
+---
+
+## 🛠️ Technologies Used
+
+* **React.js:** (For building components and managing state).
+* **Tailwind CSS:** (For rapid, responsive, and accessible styling).
+* **React Router DOM:** (For client-side routing).
+* **Vite:** (As the build tool and development server).
+
+---
+
+## 📂 How to Run This Project Locally
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/ola-a11y/Book-Appointment.git](https://github.com/ola-a11y/Book-Appointment.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd Book-Appointment
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
