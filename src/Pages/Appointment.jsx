@@ -146,3 +146,4 @@ useEffect(() => {
   )
 }
 export default Appointments
+

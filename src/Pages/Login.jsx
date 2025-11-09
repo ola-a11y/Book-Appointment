@@ -4,9 +4,7 @@ const Login = () => {
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
   const [name, setName] = useState()
-  const onSubmitHandler = async (event) => {
-        event.preventDefault()
-  }
+
   return (
     <form className="min-h-[80vh] flex items-center">
       <div className="flex flex-col gap-3 m-auto items-start p-8 min-w-[340px] sm:min-w-96 border rounded-xl text-zinc-600 text-sm shadow-lg">
@@ -28,10 +26,38 @@ const Login = () => {
           <input className="border border-zinc-300 rounded w-full p-2 mt-1" type="password" onChange={(e)=> setPassword(e.target.value)} value={password} required />
         </div>
         <button className="bg-primary text-white w-full  py-2 rounded-md text-base">{state === 'Sign Up' ? 'Create Account' : 'Login'}</button>
-         {state === 'Sign Up' 
-          ? <p>Already have an account?<span onClick={()=>setState('Login')} className="text-primary underline cursor-pointer">Login here</span></p> 
-          : <p>Create an new account?<span onClick={()=>setState('Sign Up')} className="text-primary underline cursor-pointer">Click here</span></p>}
-      </div>
+              
+        {state === 'Sign Up'  ? (
+    <p>Already have an account? 
+     
+      <button 
+        type="button" 
+        onClick={() => setState('Login')} 
+       
+        className="text-primary underline cursor-pointer 
+                   bg-transparent border-none p-0 ml-1 
+                   focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+      >
+        Login here
+      </button>
+    </p> 
+  ) 
+  : (
+    <p>Create an new account? 
+      <button 
+        type="button" 
+        onClick={() => setState('Sign Up')} 
+        className="text-primary underline cursor-pointer 
+                   bg-transparent border-none p-0 ml-1 
+                   focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+      >
+        Click here
+      </button>
+    </p>
+  )
+}
+</div>
+
     </form>
   )
 }
